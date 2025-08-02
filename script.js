@@ -26,7 +26,7 @@ function countDownTimer(){
 }
 
 function setInitialState(){
-    days.innerText = window.localStorage.getItem("days") || 8;
+    days.innerText = window.localStorage.getItem("days") || "08";
     hours.innerText = window.localStorage.getItem("hours") || 23;
     minutes.innerText = window.localStorage.getItem("minutes") || 59;
     seconds.innerText = window.localStorage.getItem("seconds") || 59;
@@ -45,7 +45,6 @@ function clearStorage(){
     window.localStorage.removeItem("minutes");
     window.localStorage.removeItem("seconds");
 }
-
 setInitialState();
 document.addEventListener("DOMContentLoaded", countDownTimer);
 window.onbeforeunload = saveState;
