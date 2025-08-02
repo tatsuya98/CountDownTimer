@@ -1,0 +1,169 @@
+:root{
+    --gray-blue-primary: hsl(237, 18%, 59%);
+    --soft-red-primary: hsl(345, 95%, 68%);
+    --white-primary: hsl(0, 0%, 100%);
+    --dark-desaturated-blue-primary: hsl(236, 21%, 26%);
+    --very-dark-blue-primary: hsl(235, 16%, 14%);
+    --very-dark-blue-secondary: hsl(234, 17%, 12%);
+
+    --font-family: 'Red Hat Text', sans-serif;
+
+    --font-weight-700: 700;
+}
+
+body{
+    background-color: var(--very-dark-blue-primary);
+    font-family: var(--font-family);
+    background-image: url(images/bg-stars.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--white-primary);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    line-height: 35px;
+    width: 25ch;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.main-content{
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.countdown-flex-container{
+    display: flex;
+    gap: 50px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.countdown-flex-container > div{
+    width: 25px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number{
+    font-weight: var(--font-weight-700);
+    font-size: 25px;
+    color: var(--soft-red-primary);
+}
+.countdown-flex-container > div > h2{
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--white-primary);
+}
+
+.card-flex{
+    display: flex;
+    width: 60px;
+    height: 70px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card-flex > p{
+    z-index: 3;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 26px;
+    background: linear-gradient(180deg, #d84e70, #fb6087);
+    background-clip: text;
+    color: transparent;
+}
+.card-flex > h2{
+    position: relative;
+    top: 25px;
+    color: hsl(248, 10%, 44%);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.box1, .box2{
+    width: 60px;
+    height: 35px;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.box1{
+    background-color: hsl(240, 21%, 22%);
+    top: 0;
+}
+
+.box2{
+    background-color: hsl(232, 22%, 25%);
+    bottom: 0;
+}
+
+.social-flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 25vh;
+    gap: 20px;
+}
+
+.social-icon-container{
+    display: flex;
+    gap: 20px;
+}
+.social-icon-container > img{
+    width: 24px;
+    height: 24px;
+}
+#background{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+}
+
+@media screen and (min-width: 800px){
+    .main-content{
+        width: 100%;
+    }
+    h1{
+        width: inherit;
+    }
+    .countdown-flex-container{
+        width: 80%;
+        gap: 65px;
+        justify-content: center;
+    }
+    .card-flex-container{
+        width: unset;
+    }
+    .box1, .box2{
+        width: 77px;
+    }
+
+    .card-flex > p{
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+    .social-icon-container{
+        margin-bottom: 30px;
+    }
+}
