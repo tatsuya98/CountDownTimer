@@ -115,6 +115,7 @@ h1{
 .box2{
     background-color: hsl(232, 22%, 25%);
     bottom: 0;
+    box-shadow: 0 10px hsl(234, 17%, 12%);
 }
 
 .social-flex-container{
@@ -134,12 +135,15 @@ h1{
     width: 24px;
     height: 24px;
 }
+.social-icon-container > img:hover{
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(49%) sepia(50%) saturate(749%) hue-rotate(298deg) brightness(104%) contrast(101%);
+}
 #background{
     position: absolute;
     z-index: -1;
     height: 125px;
 }
-
 @media screen and (min-width: 800px){
     .main-content{
         width: 100%;
