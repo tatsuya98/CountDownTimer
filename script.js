@@ -45,7 +45,6 @@ function clearStorage(){
     window.localStorage.removeItem("minutes");
     window.localStorage.removeItem("seconds");
 }
-clearStorage();
 setInitialState();
 document.addEventListener("DOMContentLoaded", countDownTimer);
 window.onbeforeunload = saveState;
