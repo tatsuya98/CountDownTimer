@@ -37,7 +37,7 @@ h1{
     height: 100vh;
 }
 .main-content{
-    min-height: 75vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -121,7 +121,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: end;
-    height: 25vh;
+    height: 20vh;
     gap: 20px;
 }
 
